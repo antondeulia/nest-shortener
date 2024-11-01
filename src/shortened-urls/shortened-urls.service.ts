@@ -10,7 +10,7 @@ import { Response } from 'express'
 import { ShortenedUrl } from '@prisma/client'
 import { GetShortenedUrlsQueryDto } from './dtos/get-shortened-urls-query.dto'
 import { CreateShortenedUrlDto } from './dtos/create-shortened-url.dto'
-import { generateRandomCode } from 'src/utils'
+import { generateRandomCode } from '../utils'
 import { UpdateShortenedUrlDto } from './dtos/update-shortened-url.dto'
 import { GetShortenedUrlDto } from './dtos/get-shortened-url.dto'
 

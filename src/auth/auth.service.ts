@@ -1,12 +1,12 @@
 import { Injectable } from '@nestjs/common'
 import argon2, { verify } from 'argon2'
 
-import { UsersService } from 'src/users/users.service'
+import { UsersService } from '../users/users.service'
 import { Response } from 'express'
 import { JwtService } from '@nestjs/jwt'
 import { ConfigService } from '@nestjs/config'
 import { SignUpDto } from './dtos/sign-up.dto'
-import { JwtTokensEnum } from 'src/utils/enums'
+import { JwtTokensEnum } from '../utils/enums'
 
 @Injectable()
 export class AuthService {

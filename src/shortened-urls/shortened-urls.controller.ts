@@ -12,9 +12,9 @@ import {
 	UseGuards
 } from '@nestjs/common'
 import { ShortenedUrlsService } from './shortened-urls.service'
-import { JwtAccessGuard } from 'src/auth/guards/jwt-access.guard'
+import { JwtAccessGuard } from '../auth/guards/jwt-access.guard'
 import { Response } from 'express'
-import { CurrentUser } from 'src/utils/decorators'
+import { CurrentUser } from '../utils/decorators'
 import { GetShortenedUrlsQueryDto } from './dtos/get-shortened-urls-query.dto'
 import { CreateShortenedUrlDto } from './dtos/create-shortened-url.dto'
 import { UpdateShortenedUrlDto } from './dtos/update-shortened-url.dto'

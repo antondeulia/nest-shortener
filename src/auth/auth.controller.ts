@@ -12,8 +12,8 @@ import { AuthService } from './auth.service'
 import { Response } from 'express'
 import { SignUpDto } from './dtos/sign-up.dto'
 import { LocalGuard } from './guards/local.guard'
-import { CurrentUser } from 'src/utils/decorators'
-import { JwtTokensEnum } from 'src/utils/enums'
+import { CurrentUser } from '../utils/decorators'
+import { JwtTokensEnum } from '../utils/enums'
 
 @Controller('auth')
 export class AuthController {
